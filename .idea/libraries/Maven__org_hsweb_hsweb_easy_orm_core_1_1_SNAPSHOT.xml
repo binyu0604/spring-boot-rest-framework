@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.hsweb:hsweb-easy-orm-core:1.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hsweb/hsweb-easy-orm-core/1.1-SNAPSHOT/hsweb-easy-orm-core-1.1-20170322.035303-8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hsweb/hsweb-easy-orm-core/1.1-SNAPSHOT/hsweb-easy-orm-core-1.1-20170322.035303-8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hsweb/hsweb-easy-orm-core/1.1-SNAPSHOT/hsweb-easy-orm-core-1.1-20170322.035303-8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

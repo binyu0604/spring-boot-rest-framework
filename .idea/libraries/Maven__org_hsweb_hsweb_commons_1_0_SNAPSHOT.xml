@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.hsweb:hsweb-commons:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hsweb/hsweb-commons/1.0-SNAPSHOT/hsweb-commons-1.0-20170322.022638-8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hsweb/hsweb-commons/1.0-SNAPSHOT/hsweb-commons-1.0-20170322.022638-8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hsweb/hsweb-commons/1.0-SNAPSHOT/hsweb-commons-1.0-20170322.022638-8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

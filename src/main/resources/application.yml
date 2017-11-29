@@ -1,0 +1,87 @@
+server:
+  port: 8091
+---
+spring:
+  profiles:
+    active: dev
+    mvc:
+      favicon:
+        enabled: false
+      view:
+ #       prefix: /templates/
+        suffix: .ftl
+    aop:
+      auto: true
+---
+logging:
+   config: classpath:config/logback-${spring.profiles.active}.yml
+---
+#master:
+#  jdbc:
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    username: wangyue
+#    password: skywing
+#druid:
+#    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    driver-class: com.mysql.jdbc.Driver
+#    username: wangyue
+#    password: skywing
+#    initial-size: 1
+#    min-idle: 1
+#    max-active: 20
+#    test-on-borrow: true
+#---
+             #
+             #
+             #spring:
+             #  thymeleaf:
+
+---
+mybatis:
+  mapper-locations: classpath:mybatis/demo/*.xml
+  type-aliases-package: spring.boot.rest.demo.entity
+  config: classpath:config/mybatis-config.xml
+  dynamic-datasource: true  #启用mybatis动态数据源
+---
+mapper:
+  mappers:
+    - spring.boot.rest.common.mapper.MyMapper
+  not-empty: false
+  identity: MYSQL
+---
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+---
+skywing:
+    app:
+      name: spring-boot-rest
+      version: 1.0
+      comment: 演示项目
+---
+#文件上传配置
+multipart:
+    enabled: true
+    maxFileSize: 100Mb
+    maxRequestSize: 100Mb
+#    location: ./upload
+---
+spring:
+  freemarker:
+    request-context-attribute: request
+    expose-request-attributes: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    #    prefix: classpath:/templates/
+    #    suffix: .html
+    #    mode: HTML5
+    #    encoding: UTF-8
+    # ;charset=<encoding> is added
+    #    content-type: text/html
+    # set to false for hot refresh
+    cache: true
+    mode: LEGACYHTML5
+
